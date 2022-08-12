@@ -57,6 +57,9 @@ $card-hover-item-color: $color-b-very-light;
 $card-hover-title-color:$color-b;
 $card-border-radius: remGolden(2);
 
+//Media Break points
+$breakpoint-small-screen: 900px;
+
 @mixin clear-margin-and-padding {
     margin: 0;
     padding: 0;

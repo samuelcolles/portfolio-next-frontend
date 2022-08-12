@@ -9,6 +9,9 @@ html {
     height: 100%;
     overflow-x: hidden;
 }
+main {
+    overflow: hidden;
+}
 
 body {
     background-image: linear-gradient(a.$color-a-light, a.$color-a-very-light);
@@ -21,7 +24,7 @@ body {
 }
 
 #__next {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -58,7 +61,7 @@ a {
 
 
 .background-box {
-    padding: a.$common-gap;
+    padding: a.remGolden(3);
     display: flex;
     justify-content: center;
 
