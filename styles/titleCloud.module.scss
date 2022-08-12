@@ -1,0 +1,15 @@
+@use './abstracts' as a;
+
+.root{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: a.$common-vertical-gap;
+}
+.container{
+    position: relative;
+}
+.cloud1{
+    margin-right: 1rem;
+}

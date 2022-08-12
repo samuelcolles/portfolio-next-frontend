@@ -1,0 +1,28 @@
+@use './abstracts' as a;
+
+.nav {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+
+    * {
+        display: block;
+    }
+
+    h1 {
+        margin-right: auto;
+        font-family: a.$title-font;
+        font-size: a.$title-font-size;
+    }
+
+    a {
+        align-self: flex-end;
+        text-decoration: none;
+        color: white;
+        margin-left: a.$heading-font-padding;
+        font-size: a.$heading-font-size*.8;
+        &:hover {
+            color: a.$color-b-light;
+        }
+    }
+}

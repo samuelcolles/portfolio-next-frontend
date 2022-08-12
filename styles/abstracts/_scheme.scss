@@ -1,0 +1,78 @@
+
+@function remGolden($var){
+    //golden ratio is 1.618, I divded it by 4 to make the small sizes more reasonable
+    @return $var * .40450849rem;
+}
+//Color Settings
+
+$color-a: #0D3368;
+$color-b: #046650;
+
+$color-a-light:lighten($color-a, 30%);
+$color-b-light:lighten($color-b, 30%);
+
+$color-a-very-light:lighten($color-a, 60%);
+$color-b-very-light:lighten($color-b, 60%);
+
+
+//Fonts
+$title-font: 'Varela Round', Helvetica, sans-serif;
+$title-font-size: remGolden(8);
+$title-font-padding: remGolden(3);
+$title-font-color: white;
+
+$heading-font:$title-font;
+$heading-font-size: remGolden(5);
+$heading-font-padding: remGolden(2);
+$heading-font-color: white;
+
+$sub-heading-font:$title-font;
+$sub-heading-font-size: remGolden(4);
+$sub-heading-font-padding: remGolden(2);
+$sub-heading-font-color: white;
+
+$regular-font: Arial, Helvetica, sans-serif;
+$regular-font-size: remGolden(2);
+$regular-font-padding: remGolden(1);
+$regular-font-color: black;
+
+//Media CutOff Points
+$screen-mobile:480px;
+$screen-tablet:800px;
+$screen-laptop:1024px;
+$screen-desktop:1200px;
+
+//Spacing
+$max-width:remGolden(150);
+$common-vertical-gap: remGolden(9);
+$common-horizontal-gap: remGolden(10);
+$common-gap: $common-vertical-gap $common-horizontal-gap $common-vertical-gap $common-horizontal-gap;
+$common-border-width: 2px;
+
+//card component settings
+$card-title-color: $color-a;
+$card-odd-item-color: $color-a-very-light;
+$card-even-item-color: white;
+$card-hover-item-color: $color-b-very-light;
+$card-hover-title-color:$color-b;
+$card-border-radius: remGolden(2);
+
+@mixin clear-margin-and-padding {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin border-settings {
+    border-style: solid;
+    border-width: $common-border-width;
+    border-color: $color-b;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+

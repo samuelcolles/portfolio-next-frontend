@@ -1,0 +1,57 @@
+@use './abstracts' as a;
+
+.root {
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+    left: 0;
+    z-index: -1000;
+}
+
+.cloud1 {
+    animation: mover 20s infinite linear;
+    top: 100px;
+}
+
+.cloud2 {
+    animation: mover 17s infinite linear;
+    top: 400px;
+}
+
+.cloud3 {
+    animation: mover 11s infinite linear;
+    top: 800px;
+}
+
+.cloud4 {
+    animation: mover 8s infinite linear;
+    top: 1200px;
+}
+
+.cloud5 {
+    animation: mover 10s infinite linear;
+    top: 500px;
+}
+
+.cloud6 {
+    animation: mover 10s infinite linear;
+    top: 600px;
+}
+.cloud7 {
+    animation: mover 10s infinite linear;
+    top: 700px;
+}
+
+@keyframes mover {
+    from {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        left: 100%;
+        transfrom: translateX(0);
+    }
+}

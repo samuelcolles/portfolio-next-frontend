@@ -1,0 +1,25 @@
+@use './abstracts' as a;
+
+
+.certification{
+    background-color:white;
+    @include a.box-shadow;
+    border-radius: a.$card-border-radius;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    // width:100%;
+    // padding-top:100%;
+    // position: relative;
+    aspect-ratio: 1;
+    h1{
+        color: a.$color-a;
+        text-decoration: none;
+    }
+    img{
+        
+       
+    }
+}

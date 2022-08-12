@@ -1,0 +1,200 @@
+@use './abstracts' as a;
+
+* {
+    @include a.clear-margin-and-padding;
+    font-family: a.$regular-font;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(a.$color-a-light, a.$color-a-very-light);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#__next {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: a.$title-font;
+    color: a.$title-font-color;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color:white;
+    &:hover{
+        color:a.$color-a-light;
+    }
+}
+.note {
+    border-radius: a.$card-border-radius;
+    padding: a.$common-gap;
+    @include a.box-shadow;
+    h1 {
+        color: a.$color-a
+    }
+
+}
+
+
+.background-box {
+    padding: a.$common-gap;
+    display: flex;
+    justify-content: center;
+
+}
+
+.background-sky {
+    background-image: url("https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.background-sky-2 {
+    background-image: url("https://images.pexels.com/photos/8822081/pexels-photo-8822081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-color-a {
+    background-color: a.$color-a;
+}
+
+.background-color-a-light {
+    background-color: a.$color-a-light;
+}
+
+.background-color-a-very-light {
+    background-color: a.$color-a-very-light;
+}
+
+.light-color {
+    color: a.$color-a-very-light;
+}
+
+.fit-height {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: a.$max-width;
+
+}
+
+.grid-1-col {
+    width: 100%;
+    display: grid;
+    column-gap: a.$common-horizontal-gap;
+    row-gap: a.$common-vertical-gap;
+    grid-template-columns: 1fr;
+
+}
+
+.grid-2-col {
+    width: 100%;
+    display: grid;
+    column-gap: a.$common-horizontal-gap;
+    row-gap: a.$common-vertical-gap;
+    grid-template-columns: 1fr 1fr;
+}
+
+.vertical-card {
+    //@include a.border-settings;
+    @include a.box-shadow;
+    border-radius: a.remGolden(2);
+
+    .card-heading {
+        border-top-left-radius: a.$card-border-radius;
+        border-top-right-radius: a.$card-border-radius;
+    }
+
+    h1,h2,h3 {
+        background-color: a.$color-a;
+        padding: a.$heading-font-padding;
+        font-size: a.$heading-font-size;
+    }
+
+    h2 {
+        color: a.$color-a-very-light ;
+        font-size: a.$heading-font-size;
+        padding-top: 0;
+    }
+
+    &:hover {
+
+        h1,
+        h2,
+        h3 {
+            background-color: a.$card-hover-title-color;
+            color: a.$heading-font-color;
+        }
+    }
+
+    ul li {
+        padding: a.remGolden(2);
+        background-color: a.$card-odd-item-color;
+
+        // &:hover {
+        //     background-color: a.$color-b-light;
+        // }
+
+        &:nth-child(odd) {
+            background-color: a.$card-even-item-color;
+        }
+
+        &:hover {
+            background-color: a.$card-hover-item-color ;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: a.$card-border-radius;
+            border-bottom-right-radius: a.$card-border-radius;
+        }
+
+    }
+}
+
+.blog-post {
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin: 3rem 0rem 3rem 0rem;
+    }
+}
+
+footer {
+    color: white;
+    margin-top: auto;
+}
+
+// .input-field{
+//     display:flex;
+// }

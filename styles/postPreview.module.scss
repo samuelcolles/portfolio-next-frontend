@@ -1,0 +1,45 @@
+@use './abstracts' as a;
+
+.preview{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: a.$color-a-very-light;
+    border-radius: a.$card-border-radius;
+    h1{
+        background-color: a.$color-a;
+        text-align: center;
+        padding:a.$heading-font-padding;
+        width:auto;
+        
+        border-top-left-radius: a.$card-border-radius;
+        border-top-right-radius: a.$card-border-radius;
+    }
+    // img{
+    //     width:100%;
+    //     border-radius: a.$card-border-radius;
+    // }
+    .imgContainer{
+        margin:a.$heading-font-padding;
+        border-radius: a.$card-border-radius;
+        aspect-ratio: 4/3;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        align-self: center;
+        
+    }
+    .textContainer{
+        background-color: white;
+        
+        padding:a.$heading-font-padding;
+        border-bottom-left-radius: a.$card-border-radius;
+        border-bottom-right-radius: a.$card-border-radius;
+        
+        flex: auto;
+    }
+
+}

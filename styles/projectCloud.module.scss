@@ -1,0 +1,70 @@
+@use './abstracts' as a;
+
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-end;
+    margin-top: a.$common-vertical-gap;
+
+}
+//Cloud Container Section
+.cloudContainer {
+    position:relative;
+    // margin-left:auto;
+    margin-right:auto;
+}
+.preview {
+    position: absolute;
+    left:140px;
+    bottom:60px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.previewImage {
+    height: 200px;
+    width:200px;
+    border-radius: a.remGolden(2);
+}
+
+.linkShelf {
+    display:flex;
+    flex-direction: row;
+    margin-top: a.remGolden(2);
+    
+}
+.previewText {
+    color:a.$color-a;
+    font-size: a.$sub-heading-font-size;
+    &:hover{
+        color:a.$color-a-light;
+    }
+}
+
+// Description Cloud Container
+.descCloudContainer {
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.description {
+
+    position: absolute;
+    left:97.5px;
+    top:175px;
+    height: 300px;
+    width: 500px;
+}
+
+.description_title {
+    text-align: center;
+    color: a.$color-a;
+    margin-bottom:a.remGolden(2);
+}
+
+.description_text {
+
+}

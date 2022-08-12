@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="153.5" viewBox="0 0 220 153.5">
+  <g id="Layer_1" data-name="Layer 1"/>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Medium_Cloud" data-name="Medium Cloud">
+      <rect x="0" y="73.5" width="220" height="80" rx="40" ry="40" fill="#fff"/>
+      <circle cx="87.9" cy="64" r="64" fill="#fff"/>
+      <circle cx="169.9" cy="73" r="40" fill="#fff"/>
+    </g>
+  </g>
+</svg>

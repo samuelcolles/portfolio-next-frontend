@@ -1,0 +1,18 @@
+@use './abstracts' as a;
+
+.post{
+    h1{
+        background-color: a.$color-a;
+        padding: a.$heading-font-padding;
+        border-radius: a.$card-border-radius;
+
+    }
+    background-color: a.$color-a-very-light;
+    border-radius: a.$card-border-radius;
+    padding: a.$heading-font-padding;
+    img{
+        //margin:a.$heading-font-padding;
+        width:100%;
+        border-radius: a.$card-border-radius;
+    }
+}

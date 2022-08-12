@@ -1,0 +1,7 @@
+@use './abstracts' as a;
+
+.note {
+    border-radius: a.$card-border-radius;
+    padding: a.$common-gap;
+    @include a.box-shadow;
+}
