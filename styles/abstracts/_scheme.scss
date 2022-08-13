@@ -36,12 +36,10 @@ $regular-font-size: remGolden(2);
 $regular-font-padding: remGolden(1);
 $regular-font-color: black;
 
-//Media CutOff Points
-$screen-mobile:480px;
-$screen-tablet:800px;
-$screen-laptop:1024px;
-$screen-desktop:1200px;
 
+//Media Break points
+$breakpoint-very-small-screen: 405px;
+$breakpoint-small-screen: 900px;
 //Spacing
 $max-width:remGolden(150);
 $common-vertical-gap: remGolden(9);
@@ -57,8 +55,7 @@ $card-hover-item-color: $color-b-very-light;
 $card-hover-title-color:$color-b;
 $card-border-radius: remGolden(2);
 
-//Media Break points
-$breakpoint-small-screen: 900px;
+
 
 @mixin clear-margin-and-padding {
     margin: 0;

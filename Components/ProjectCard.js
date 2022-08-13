@@ -5,8 +5,8 @@ import { marked } from 'marked'
 
 const ProjectCard = ({ project }) => {
     const { title, desc, githubURL, demoURL, codeDemoImage, siteDemoImage } = project.attributes
-    const siteImageURL = process.env.STRAPI_BACKEND_URL + siteDemoImage.data.attributes.url
-    const codeImageURL = process.env.STRAPI_BACKEND_URL + codeDemoImage.data.attributes.url
+    const siteImageURL =  siteDemoImage.data.attributes.url
+    const codeImageURL = codeDemoImage.data.attributes.url
 
     return <div className={Style.root}>
         <div className={Style.infoBox}>

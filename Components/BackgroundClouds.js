@@ -1,7 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
 import Style from '../styles/backgroundClouds.module.scss'
-
 
 const BackgroundClouds = () => {
   return (

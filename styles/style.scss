@@ -64,6 +64,10 @@ a {
     padding: a.remGolden(3);
     display: flex;
     justify-content: center;
+    @media screen and (max-width: a.$breakpoint-very-small-screen) {
+        padding: 0rem;
+        padding-top:a.remGolden(3);
+    }
 
 }
 
