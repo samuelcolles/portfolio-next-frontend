@@ -6,8 +6,9 @@ import Footer from './Footer'
 export default function Layout({ children }) {
     return (<>
         <MyHead />
-        <Nav />
+        
         <main>
+        <Nav />
             {children}
         </main>
         <div style={{height:"100%"}} />

@@ -14,11 +14,11 @@ const ProjectCard = ({ project }) => {
             <div className={Style.description} dangerouslySetInnerHTML={{ __html: marked(desc) }} />
         </div>
         <div className={Style.previewStack} >
-            <a href={githubURL} className={Style.preview}>
+            <a href={demoURL} className={Style.preview}>
                 <Image className={Style.previewImage} src={siteImageURL} height={200} width={200} />
                 <p className={Style.previewText}>Demo</p>
             </a>
-            <a href={demoURL} className={Style.preview} >
+            <a href={githubURL} className={Style.preview} >
                 <Image className={Style.previewImage} src={codeImageURL} height={200} width={200} />
                 <p className={Style.previewText}>Code</p>
             </a>
