@@ -2,6 +2,6 @@
 
 .note {
     border-radius: a.$card-border-radius;
-    padding: a.$common-gap;
+    padding: a.remGolden(4);
     @include a.box-shadow;
 }

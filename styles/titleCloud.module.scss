@@ -6,10 +6,16 @@
     justify-content: center;
     align-items: center;
     margin-top: a.$common-vertical-gap;
-}
-.container{
-    position: relative;
-}
-.cloud1{
-    margin-right: 1rem;
+
+    .cloud2{
+        margin-left: a.remGolden(4);
+    }
+
+    @media screen and (max-width: a.$breakpoint-small-screen) {
+        flex-direction: column;
+        .cloud2{
+            margin-top: a.remGolden(4);
+            margin-left: 0px;
+        }
+    }
 }
