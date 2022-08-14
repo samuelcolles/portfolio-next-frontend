@@ -9,7 +9,7 @@ export default function CertificationCard({ certification }) {
     return <Link href={link} >
         <div className={style.certification}>
             <div className="box">
-                <img src={badgeImageURL} height={300} width={300} />
+                <Image src={badgeImageURL} height={300} width={300} />
             </div>
         </div>
 
