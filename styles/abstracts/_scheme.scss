@@ -14,6 +14,9 @@ $color-b-light:lighten($color-b, 30%);
 $color-a-very-light:lighten($color-a, 60%);
 $color-b-very-light:lighten($color-b, 60%);
 
+$color-a-transparent:rgba($color-a,0.5);
+$color-a-very-light-transparent:rgba($color-a-very-light, 0.8);
+$color-white-transparent:rgba($color-a-very-light,0.8);
 
 //Fonts
 $title-font: 'Varela Round', Helvetica, sans-serif;
@@ -38,8 +41,8 @@ $regular-font-color: black;
 
 
 //Media Break points
-$breakpoint-very-small-screen: 405px;
-$breakpoint-small-screen: 900px;
+$breakpoint-very-small-screen: 32rem;
+$breakpoint-small-screen: 56rem;
 //Spacing
 $max-width:remGolden(150);
 $common-vertical-gap: remGolden(9);

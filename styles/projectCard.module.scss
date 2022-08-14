@@ -6,11 +6,7 @@
     justify-content: center;
     align-items: flex-start;
     display: flex;
-    @include a.box-shadow;
-    border-radius: a.remGolden(2);
-    background-color: a.$color-a-very-light;
     flex-direction: row;
-    padding: a.remGolden(4);
 
     .infoBox {
         padding-right: a.remGolden(4);
@@ -25,14 +21,15 @@
         font-size: a.$title-font-size;
         color: white;
         padding: a.remGolden(3);
-        background-color: a.$color-a;
+        background-color: a.$color-a-transparent;
         border-top-left-radius: a.$card-border-radius;
         border-top-right-radius: a.$card-border-radius;
+
     }
 
     .description {
         padding: a.remGolden(3);
-        background-color: white;
+        background-color: a.$color-white-transparent;
         border-bottom-left-radius: a.$card-border-radius;
         border-bottom-right-radius: a.$card-border-radius;
         height: 100%;
@@ -73,7 +70,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: a.$color-white-transparent;
         border-radius: a.$card-border-radius;
         text-align: center;
         text-decoration: none;
@@ -108,6 +105,9 @@
         box-shadow: none;
         &:hover{
             box-shadow: none;
+        }
+        .title{
+            text-align: center;
         }
         .previewStack{
             grid-template-columns: 1fr 1fr;

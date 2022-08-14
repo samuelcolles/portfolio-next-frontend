@@ -6,7 +6,6 @@ import { useEffect } from "react"
 export default function CertificationCard({ certification }) {
     const { badge, link } = certification.attributes
     const badgeImageURL = badge.data[0].attributes.url
-    useEffect(()=>console.log(badgeImageURL),[])
     return <Link href={link} >
         <div className={style.certification}>
             <div className="box">
