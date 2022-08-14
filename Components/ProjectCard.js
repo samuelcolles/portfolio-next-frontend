@@ -17,11 +17,11 @@ const ProjectCard = ({ project }) => {
         <div className={Style.previewStack} >
             <a href={demoURL} className={Style.preview}>
                 <Image className={Style.previewImage} src={siteImageURL} height={200} width={200} />
-                <p className={Style.previewText}>Demo</p>
+                <h3 className={Style.previewText}>Demo</h3>
             </a>
             <a href={githubURL} className={Style.preview} >
                 <Image className={Style.previewImage} src={codeImageURL} height={200} width={200} />
-                <p className={Style.previewText}>Code</p>
+                <h3 className={Style.previewText}>Code</h3>
             </a>
         </div>
     </div>

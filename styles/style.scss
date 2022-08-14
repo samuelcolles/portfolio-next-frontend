@@ -10,11 +10,12 @@ html {
     overflow-x: hidden;
 }
 main {
-    overflow: hidden;
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
 }
-
 body {
-    height: 100%;
+    min-height: 100%;
     background-image: linear-gradient(a.$color-a-light, a.$color-a-very-light);
     background-attachment: fixed;
     background-position: center;
@@ -25,10 +26,10 @@ body {
 }
 
 #__next {
-    min-height: 100%;
+    flex-grow:1;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 h1,
@@ -63,12 +64,12 @@ a {
 
 
 .background-box {
-    padding: a.remGolden(3);
+    padding: a.remGolden(4);
     display: flex;
     justify-content: center;
     @media screen and (max-width: a.$breakpoint-very-small-screen) {
-        padding: 0rem;
-        padding-top:a.remGolden(3);
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
 }
@@ -115,21 +116,30 @@ a {
     max-width: a.$max-width;
 
 }
-
+.flex-column {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    & > *{
+        margin-bottom: a.remGolden(4);
+    }
+    last-child{
+        margin-bottom:auto;
+    }
+}
 .grid-1-col {
     width: 100%;
     display: grid;
-    column-gap: a.$common-horizontal-gap;
-    row-gap: a.$common-vertical-gap;
+    column-gap: a.remGolden(4);
+    row-gap: a.remGolden(4);
     grid-template-columns: 1fr;
 
 }
-
 .grid-2-col {
     width: 100%;
     display: grid;
-    column-gap: a.$common-horizontal-gap;
-    row-gap: a.$common-vertical-gap;
+    column-gap: a.remGolden(4);
+    row-gap: a.remGolden(4);
     grid-template-columns: 1fr 1fr;
 }
 

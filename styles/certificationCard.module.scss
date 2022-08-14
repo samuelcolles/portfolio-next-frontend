@@ -9,17 +9,12 @@
     display:flex;
     justify-content: center;
     align-items: center;
-
-    // width:100%;
-    // padding-top:100%;
-    // position: relative;
     aspect-ratio: 1;
+    div span{
+        display:block;
+    }
     h1{
         color: a.$color-a;
         text-decoration: none;
-    }
-    img{
-        
-       
     }
 }
