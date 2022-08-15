@@ -1,7 +1,7 @@
 @use './abstracts' as a;
 
 .note {
-    border-radius: a.$card-border-radius;
-    padding: a.remGolden(4);
     @include a.box-shadow;
+    @include a.card-border-radius;
+    padding: a.remGolden(4);
 }

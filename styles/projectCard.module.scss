@@ -5,29 +5,29 @@
     align-items: flex-start;
     display: flex;
     flex-direction: row;
+
     .infoBox {
-        padding-right: a.remGolden(4);
+        @include a.box-shadow;
+        @include a.card-border-radius;
+        overflow: hidden;
+        margin-right: a.remGolden(4);
         height: 100%;
         display: flex;
         flex-direction: column;
         flex: auto;
-
     }
+
     .title {
         font-size: a.$title-font-size;
         color: white;
         padding: a.remGolden(3);
         background-color: a.$color-a-transparent;
-        border-top-left-radius: a.$card-border-radius;
-        border-top-right-radius: a.$card-border-radius;
-
     }
 
     .description {
         padding: a.remGolden(3);
         background-color: a.$color-a-very-light-transparent;
-        border-bottom-left-radius: a.$card-border-radius;
-        border-bottom-right-radius: a.$card-border-radius;
+
         height: 100%;
 
         h3 {
@@ -61,15 +61,19 @@
     }
 
     .preview {
+
+        @include a.box-shadow;
+        @include a.card-border-radius;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: a.$color-a-very-light-transparent;
-        border-radius: a.$card-border-radius;
+
         text-align: center;
         text-decoration: none;
         font-size: a.$sub-heading-font-size;
         padding: a.remGolden(2);
+
 
         .previewText {
             color: a.$color-a;
@@ -80,6 +84,7 @@
                 color: a.$color-a-light;
             }
         }
+
     }
 
     .previewImage {
@@ -90,28 +95,39 @@
         border-width: 2px;
         border-color: white;
     }
+
     @media screen and (max-width: a.$breakpoint-small-screen) {
         flex-direction: column;
-        padding: 0px;
+        margin: 0px;
         background-color: transparent;
-        box-shadow: none;
-        &:hover{
-            box-shadow: none;
-        }
-        .title{
+
+        .title {
             text-align: center;
         }
-        .previewStack{
+
+        .previewStack {
             grid-template-columns: 1fr 1fr;
             margin-left: auto;
-            margin-right:auto;
+            margin-right: auto;
             margin-top: a.remGolden(4);
-
         }
-        .infoBox{
-            padding:0px;
+
+
+        .infoBox {
+            margin: 0px;
         }
 
     }
 
+    @media screen and (max-width: a.$breakpoint-very-small-screen) {
+        .previewStack {
+            margin: 0px;
+            gap: 0px;
+            width:100%;
+            .preview{
+                padding-top: 0px;
+            }
+
+        }
+    }
 }

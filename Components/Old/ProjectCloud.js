@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Style from '../styles/projectCloud.module.scss'
+import Style from '../../styles/projectCloud.module.scss'
 const ProjectCloud = ({ project }) => {
   const { title, desc, githubURL, demoURL, codeDemoImage, siteDemoImage  } = project.attributes
   const siteImageURL = 'http:/localhost:1337' + siteDemoImage.data.attributes.url

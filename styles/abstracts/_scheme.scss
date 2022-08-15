@@ -1,22 +1,22 @@
-
-@function remGolden($var){
+@function remGolden($var) {
     //golden ratio is 1.618, I divded it by 4 to make the small sizes more reasonable
     @return $var * .40450849rem;
 }
+
 //Color Settings
 
 $color-a: #0D3368;
 $color-b: #046650;
 
-$color-a-light:lighten($color-a, 30%);
-$color-b-light:lighten($color-b, 30%);
+$color-a-light: lighten($color-a, 30%);
+$color-b-light: lighten($color-b, 30%);
 
-$color-a-very-light:lighten($color-a, 60%);
-$color-b-very-light:lighten($color-b, 60%);
+$color-a-very-light: lighten($color-a, 60%);
+$color-b-very-light: lighten($color-b, 60%);
 
-$color-a-transparent:rgba($color-a,0.5);
-$color-a-very-light-transparent:rgba($color-a-very-light, 0.8);
-$color-white-transparent:rgba(white,0.8);
+$color-a-transparent: rgba($color-a, 0.5);
+$color-a-very-light-transparent: rgba($color-a-very-light, 0.8);
+$color-white-transparent: rgba(white, 0.8);
 
 //Fonts
 $title-font: 'Varela Round', Helvetica, sans-serif;
@@ -24,12 +24,12 @@ $title-font-size: remGolden(8);
 $title-font-padding: remGolden(3);
 $title-font-color: white;
 
-$heading-font:$title-font;
+$heading-font: $title-font;
 $heading-font-size: remGolden(5);
 $heading-font-padding: remGolden(2);
 $heading-font-color: white;
 
-$sub-heading-font:$title-font;
+$sub-heading-font: $title-font;
 $sub-heading-font-size: remGolden(4);
 $sub-heading-font-padding: remGolden(2);
 $sub-heading-font-color: white;
@@ -44,7 +44,7 @@ $regular-font-color: black;
 $breakpoint-very-small-screen: 32rem;
 $breakpoint-small-screen: 56rem;
 //Spacing
-$max-width:remGolden(150);
+$max-width: remGolden(150);
 $common-vertical-gap: remGolden(9);
 $common-horizontal-gap: remGolden(10);
 $common-gap: $common-vertical-gap $common-horizontal-gap $common-vertical-gap $common-horizontal-gap;
@@ -52,10 +52,8 @@ $common-border-width: 2px;
 
 //card component settings
 $card-title-color: $color-a;
-$card-odd-item-color: $color-a-very-light;
-$card-even-item-color: white;
-$card-hover-item-color: $color-b-very-light;
-$card-hover-title-color:$color-b;
+$card-odd-item-color: $color-a-very-light-transparent;
+$card-even-item-color: $color-white-transparent;
 $card-border-radius: remGolden(2);
 
 
@@ -70,6 +68,12 @@ $card-border-radius: remGolden(2);
     border-width: $common-border-width;
     border-color: $color-b;
 }
+@mixin card-border-radius {
+    border-radius: $card-border-radius;
+    @media screen and (max-width: $breakpoint-very-small-screen) {
+        border-radius: 0px;
+    }
+}
 
 @mixin box-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -77,5 +81,10 @@ $card-border-radius: remGolden(2);
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     }
+    @media screen and (max-width: $breakpoint-very-small-screen) {
+        box-shadow: none;
+        &:hover {
+            box-shadow: none;
+        }
+    }
 }
-

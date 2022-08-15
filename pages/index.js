@@ -1,9 +1,6 @@
 import ProjectCard from '../Components/ProjectCard'
-import ProjectCloud from '../Components/ProjectCloud'
 import BackgroundClouds from '../Components/BackgroundClouds'
 import TitleCloud from '../Components/TitleCloud'
-import Image from 'next/image'
-
 
 export default function Home({ projects }) {
 

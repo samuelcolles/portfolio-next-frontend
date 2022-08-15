@@ -1,15 +1,12 @@
 @use './abstracts' as a;
 
 .form {
-    
     display: flex;
     flex-direction: column;
     padding: a.remGolden(4);
-
     input {
         margin-bottom: a.remGolden(2);
     }
-
     textarea {
         resize: none;
     }
@@ -29,10 +26,9 @@
     }
 }
 .main {
-    border-radius: a.$card-border-radius;
+    @include a.card-border-radius;
     @include a.box-shadow;
 }
-
 
 .fieldAndError {
     display: flex;

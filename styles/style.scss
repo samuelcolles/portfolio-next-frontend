@@ -13,6 +13,7 @@ main {
     min-height: 100%;
     display:flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 body {
     min-height: 100%;
@@ -59,9 +60,7 @@ a {
     h1 {
         color: a.$color-a
     }
-
 }
-
 
 .background-box {
     padding: a.remGolden(4);
@@ -84,6 +83,7 @@ a {
 }
 
 .background-sky-2 {
+    flex-grow: 1;
     background-image: url("https://images.pexels.com/photos/8822081/pexels-photo-8822081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-attachment: fixed;
     background-position: center;
@@ -100,7 +100,7 @@ a {
 }
 
 .background-color-a-very-light {
-    background-color: a.$color-a-very-light;
+    background-color: a.$color-a-very-light-transparent;
 }
 
 .light-color {
@@ -146,15 +146,11 @@ a {
 .vertical-card {
     //@include a.border-settings;
     @include a.box-shadow;
-    border-radius: a.remGolden(2);
-
-    .card-heading {
-        border-top-left-radius: a.$card-border-radius;
-        border-top-right-radius: a.$card-border-radius;
-    }
-
+    @include a.card-border-radius;
+    height: fit-content;
+    overflow: hidden;
     h1,h2,h3 {
-        background-color: a.$color-a;
+        background-color: a.$color-a-transparent;
         padding: a.$heading-font-padding;
         font-size: a.$heading-font-size;
     }
@@ -165,38 +161,14 @@ a {
         padding-top: 0;
     }
 
-    &:hover {
-
-        h1,
-        h2,
-        h3 {
-            background-color: a.$card-hover-title-color;
-            color: a.$heading-font-color;
-        }
-    }
-
     ul li {
         padding: a.remGolden(2);
         background-color: a.$card-odd-item-color;
-
-        // &:hover {
-        //     background-color: a.$color-b-light;
-        // }
-
         &:nth-child(odd) {
             background-color: a.$card-even-item-color;
         }
-
-        &:hover {
-            background-color: a.$card-hover-item-color ;
-        }
-
-        &:last-child {
-            border-bottom-left-radius: a.$card-border-radius;
-            border-bottom-right-radius: a.$card-border-radius;
-        }
-
     }
+
 }
 
 .blog-post {

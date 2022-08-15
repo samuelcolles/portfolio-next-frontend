@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import CorrespondenceBox from "../Components/CorrespondenceBox"
-import style from '../styles/contact.module.scss'
 import BackgroundClouds from "../Components/BackgroundClouds"
+import style from '../styles/contact.module.scss'
 export const Contact = () => (<>
 <BackgroundClouds/>
     <div className="background-box">
