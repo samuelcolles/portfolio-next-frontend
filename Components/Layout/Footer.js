@@ -1,4 +1,4 @@
-import Style from '../../styles/footer.module.scss'
+import Style from './footer.module.scss'
 
 export default function Footer({copyRight}){
     return <footer className={Style.root + " background-box background-color-a"}>

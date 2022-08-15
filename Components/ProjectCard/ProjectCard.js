@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../styles/projectCard.module.scss'
+import Style from './projectCard.module.scss'
 import Image from 'next/image'
 import { marked } from 'marked'
 

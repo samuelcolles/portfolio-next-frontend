@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../styles/backgroundClouds.module.scss'
+import Style from './backgroundClouds.module.scss'
 
 const BackgroundClouds = () => {
   return (

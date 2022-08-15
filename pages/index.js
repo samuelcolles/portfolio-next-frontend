@@ -1,6 +1,6 @@
-import ProjectCard from '../Components/ProjectCard'
-import BackgroundClouds from '../Components/BackgroundClouds'
-import TitleCloud from '../Components/TitleCloud'
+import ProjectCard from '../Components/ProjectCard/ProjectCard'
+import BackgroundClouds from '../Components/BackgroundClouds/BackgroundClouds'
+import TitleCloud from '../Components/TitleCloud/TitleCloud'
 
 export default function Home({ projects }) {
 

@@ -1,0 +1,8 @@
+@use '../../styles/abstracts/index' as a;
+
+.root {
+    background-color: a.$color-a-very-light-transparent;
+    @include a.box-shadow;
+    @include a.card-border-radius;
+    padding: a.remGolden(4);
+}

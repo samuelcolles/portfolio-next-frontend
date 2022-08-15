@@ -1,7 +1,0 @@
-@use './abstracts' as a;
-
-.note {
-    @include a.box-shadow;
-    @include a.card-border-radius;
-    padding: a.remGolden(4);
-}

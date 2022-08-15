@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { CorrespondenceAPIService } from "../services/correspondenceAPI";
-import style from '../styles/correspondenceBox.module.scss'
+import { CorrespondenceAPIService } from "../../services/correspondenceAPI";
+import style from './correspondenceBox.module.scss'
 
 export default function CorrespondenceBox() {
     const [name, setName] = useState("")

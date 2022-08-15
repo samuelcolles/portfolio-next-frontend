@@ -1,7 +1,7 @@
 
-import SkillList from '../Components/SkillList'
-import ExperienceList from '../Components/ExperienceList'
-import CertificationCard from '../Components/CertificationCard'
+import SkillList from '../Components/Skill/SkillList'
+import ExperienceList from '../Components/Experience/ExperienceList'
+import CertificationCard from '../Components/CertificationCard/CertificationCard'
 
 export default function Resume(props) {
   return <>

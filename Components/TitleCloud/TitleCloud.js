@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from '../styles/titleCloud.module.scss'
+import Style from './titleCloud.module.scss'
 
 const TitleCloud = () => {
     return <div className={Style.root}>
