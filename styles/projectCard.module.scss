@@ -27,18 +27,14 @@
     .description {
         padding: a.remGolden(3);
         background-color: a.$color-a-very-light-transparent;
-
         height: 100%;
-
         h3 {
             color: a.$color-a;
             margin-bottom: a.remGolden(2);
             font-size: a.$sub-heading-font-size;
         }
-
         p {
             margin-bottom: a.remGolden(2);
-            text-indent: 2rem;
         }
 
         ul {
@@ -49,6 +45,9 @@
         li {
             list-style-type: disc;
             margin-bottom: a.remGolden(.5);
+        }
+        &:last-child{
+            margin-bottom: 0px;
         }
     }
 

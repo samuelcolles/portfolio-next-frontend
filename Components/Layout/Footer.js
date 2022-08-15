@@ -1,19 +1,9 @@
+import Style from '../../styles/footer.module.scss'
 
 export default function Footer({copyRight}){
-    return <footer className="background-box background-color-a">
-        <div className="container">
+    return <footer className={Style.root + " background-box background-color-a"}>
+        <div className={Style.content+" container"}>
             <p>Ⓒ Samuel Colles 2022</p>
         </div>
     </footer>
 }
-// export const getStaticProps = async () => {
-//     const res = await fetch(`http://localhost:1337/api/copy-right`)
-//     const copyRight = await res.json()
-  
-//     console.log(copyRight)
-//     return {
-//       props: {
-//         copyRight:copyRight
-//       }
-//     }
-//   }

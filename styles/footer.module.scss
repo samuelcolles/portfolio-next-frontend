@@ -1,0 +1,13 @@
+@use './abstracts' as a;
+
+.root {
+    color: white;
+    margin-top: auto;
+
+    .content {
+        @media screen and (max-width: a.$breakpoint-very-small-screen) {
+            padding-left: a.remGolden(4);
+        }
+
+    }
+}

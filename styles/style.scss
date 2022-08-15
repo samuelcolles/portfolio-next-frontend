@@ -4,7 +4,6 @@
     @include a.clear-margin-and-padding;
     font-family: a.$regular-font;
 }
-
 html {
     height: 100%;
     overflow-x: hidden;
@@ -25,14 +24,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 #__next {
     flex-grow:1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
-
 h1,
 h2,
 h3,
@@ -40,11 +37,9 @@ h4 {
     font-family: a.$title-font;
     color: a.$title-font-color;
 }
-
 li {
     list-style-type: none;
 }
-
 a {
     outline: none;
     text-decoration: none;
@@ -61,7 +56,6 @@ a {
         color: a.$color-a
     }
 }
-
 .background-box {
     padding: a.remGolden(4);
     display: flex;
@@ -72,7 +66,6 @@ a {
     }
 
 }
-
 .background-sky {
     background-image: url("https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg");
     background-attachment: fixed;
@@ -97,14 +90,13 @@ a {
 
 .background-color-a-light {
     background-color: a.$color-a-light;
+    @media screen and (max-width: a.$breakpoint-very-small-screen) {
+        padding: 0px;
+    }
 }
 
 .background-color-a-very-light {
     background-color: a.$color-a-very-light-transparent;
-}
-
-.light-color {
-    color: a.$color-a-very-light;
 }
 
 .fit-height {
@@ -138,9 +130,11 @@ a {
 .grid-2-col {
     width: 100%;
     display: grid;
-    column-gap: a.remGolden(4);
-    row-gap: a.remGolden(4);
+    gap: a.remGolden(4);
     grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: a.$breakpoint-very-small-screen) {
+        gap:0px;
+    }
 }
 
 .vertical-card {
@@ -181,11 +175,3 @@ a {
     }
 }
 
-footer {
-    color: white;
-    margin-top: auto;
-}
-
-// .input-field{
-//     display:flex;
-// }

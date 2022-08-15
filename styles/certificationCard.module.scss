@@ -4,15 +4,11 @@
 .certification{
     background-color:white;
     @include a.box-shadow;
-    border-radius: a.$card-border-radius;
+    @include a.card-border-radius;
     cursor: pointer;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     aspect-ratio: 1;
-    div span{
-        display:block;
-    }
+    position: relative;
+    overflow: hidden;
     h1{
         color: a.$color-a;
         text-decoration: none;
