@@ -7,7 +7,6 @@ const ProjectCard = ({ project }) => {
     const { title, desc, githubURL, demoURL, codeDemoImage, siteDemoImage } = project.attributes
     const siteImageURL =  siteDemoImage.data.attributes.url
     const codeImageURL = codeDemoImage.data.attributes.url
-    console.log(siteImageURL)
 
     return <div className={Style.root}>
         <div className={Style.infoBox}>
