@@ -1,8 +1,18 @@
 @use './abstracts/index' as a;
 
 .root {
-    background-color: a.$color-a-very-light-transparent;
-    @include a.box-shadow;
-    @include a.card-border-radius;
-    padding: a.remGolden(4);
+
+    .box {
+        text-align: center;
+        h1{
+            color: a.$color-a;
+            font-size: a.remGolden(9);
+            margin-bottom:a.remGolden(4)
+        }
+        background-color: a.$color-a-very-light-transparent;
+        @include a.box-shadow;
+        @include a.card-border-radius;
+        padding: a.remGolden(4);
+    }
+
 }
