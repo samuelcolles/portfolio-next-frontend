@@ -8,7 +8,7 @@ export const Contact = () => (<>
         
         <div className="container flex-column">
             <ContactNote />
-            {/* <CorrespondenceBox /> */}
+            <CorrespondenceBox />
         </div>
     </div>
 </>

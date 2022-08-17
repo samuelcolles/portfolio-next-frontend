@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CorrespondenceAPIService } from "../../services/correspondenceAPI";
 import style from './correspondenceBox.module.scss'
+import {useRouter} from 'next/router'
 
 export default function CorrespondenceBox() {
     const [name, setName] = useState("")
@@ -9,6 +10,8 @@ export default function CorrespondenceBox() {
     const [nameError, setNameError] = useState(false)
     const [emailError, setEmailError] = useState(false)
     const [messageError, setMessageError] = useState(false)
+
+    const router = useRouter()
 
     const handleSend = async (event) => {
         event.preventDefault();
@@ -40,7 +43,10 @@ export default function CorrespondenceBox() {
                     message: message
                 }
             });
+            console.log("Request sent")
+            router.push("/success")
         }
+        
     }
 
     return <div className={"background-color-a-very-light container " + style.main}>
