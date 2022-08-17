@@ -1,11 +1,9 @@
 import ProjectCard from '../Components/ProjectCard/ProjectCard'
-import BackgroundClouds from '../Components/BackgroundClouds/BackgroundClouds'
 import TitleCloud from '../Components/TitleCloud/TitleCloud'
 
 export default function Home({ projects }) {
 
   return <>
-    <BackgroundClouds />
     <TitleCloud />
     <div className='background-box'>
       <div className='grid-1-col container'>

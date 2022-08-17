@@ -4,12 +4,11 @@ import CorrespondenceBox from "../Components/Contact/CorrespondenceBox"
 import ContactNote from "../Components/Contact/ContactNote"
 
 export const Contact = () => (<>
-<BackgroundClouds/>
     <div className="background-box">
         
         <div className="container flex-column">
             <ContactNote />
-            <CorrespondenceBox />
+            {/* <CorrespondenceBox /> */}
         </div>
     </div>
 </>

@@ -12,35 +12,42 @@
 
 .cloud1 {
     animation: mover 20s infinite linear;
+    animation-delay: -12s;
     top: 80px;
 }
 
 .cloud2 {
     animation: mover 17s infinite linear;
+    animation-delay: -6s;
     top: 230px;
 }
 
 .cloud3 {
     animation: mover 11s infinite linear;
+    animation-delay: -2s;
     top: 400px;
 }
 
 .cloud4 {
     animation: mover 8s infinite linear;
+    animation-delay: -6s;
     top: 650px;
 }
 
 .cloud5 {
     animation: mover 7s infinite linear;
+    animation-delay: -3s;
     top: 1000px;
 }
 
 .cloud6 {
     animation: mover 10s infinite linear;
+    animation-delay: -2s;
     top: 1300px;
 }
 .cloud7 {
     animation: mover 10s infinite linear;
+    animation-delay: -2s;
     top: 700px;
 }
 
