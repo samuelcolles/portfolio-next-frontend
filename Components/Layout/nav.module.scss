@@ -7,9 +7,7 @@
     justify-content: flex-end;
     text-align: center;
     margin-top: auto;
-    
 
-   
     * {
         display: block;
     }
@@ -24,13 +22,8 @@
     a {
         align-self: flex-end;
         text-decoration: none;
-        color: white;
         margin-left: a.$heading-font-padding;
         font-size: a.$heading-font-size*.8;
-
-        &:hover {
-            color: a.$color-b-light;
-        }
     }
 
     .linkShelf {

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="181" height="144.18" viewBox="0 0 181 144.18">
+  <g id="Layer_1" data-name="Layer 1"/>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_8" data-name="Layer 8">
+      <circle cx="72.28" cy="64.24" r="64" fill="#fff"/>
+      <circle cx="163.22" cy="15.62" r="15.62" fill="#fff"/>
+      <rect x="0" y="64.18" width="181" height="80" rx="40" ry="40" fill="#fff"/>
+      <circle cx="138.28" cy="58.24" r="25" fill="#fff"/>
+    </g>
+  </g>
+</svg>

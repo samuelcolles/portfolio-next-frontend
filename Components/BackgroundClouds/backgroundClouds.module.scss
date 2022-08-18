@@ -19,7 +19,7 @@
 .cloud2 {
     animation: mover 17s infinite linear;
     animation-delay: -6s;
-    top: 230px;
+    top: 210px;
 }
 
 .cloud3 {
@@ -43,12 +43,17 @@
 .cloud6 {
     animation: mover 10s infinite linear;
     animation-delay: -2s;
-    top: 1300px;
+    top: 1400px;
 }
 .cloud7 {
-    animation: mover 10s infinite linear;
+    animation: mover 13s infinite linear;
+    animation-delay: -9s;
+    top: 1700px;
+}
+.cloud8 {
+    animation: mover 8s infinite linear;
     animation-delay: -2s;
-    top: 700px;
+    top: 1900px;
 }
 
 @keyframes mover {
