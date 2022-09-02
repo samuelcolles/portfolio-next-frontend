@@ -1,0 +1,66 @@
+@use "../../styles/abstracts/index" as a;
+
+.root {
+  //@include a.border-settings;
+  @include a.box-shadow;
+  @include a.card-border-radius;
+  height: fit-content;
+  overflow: hidden;
+  background-color: a.$color-a-transparent;
+  padding: a.remGolden(2);
+  h1 {
+    padding: a.$heading-font-padding;
+    font-size: a.$heading-font-size;
+    padding-left: 0rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: a.remGolden(2);
+    @media only screen and (max-width: a.$breakpoint-small-screen) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: a.remGolden(2);
+  }
+  .tool {
+    background-color: a.$color-white-transparent;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    padding: a.remGolden(2);
+
+    border-radius: a.$card-border-radius;
+    .titleBox {
+      padding-left: a.remGolden(1);
+      padding-bottom: a.remGolden(2);
+    }
+
+    p {
+      margin-left: a.remGolden(2);
+    }
+    .shelf {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .nestedTool {
+      background-color: a.$color-a-very-light-transparent;
+      flex-grow: 0;
+
+      padding: a.remGolden(1);
+      border-radius: a.$card-border-radius;
+    }
+  }
+}
+
+// ul li {
+//   padding: a.remGolden(2);
+//   background-color: a.$card-odd-item-color;
+//   &:nth-child(odd) {
+//     background-color: a.$card-even-item-color;
+//   }
+// }
