@@ -1,39 +1,36 @@
-@use '../../styles/abstracts/index' as a;
+@use "../../styles/abstracts/index" as a;
 
 .root {
-    color: white;
-    margin-top: auto;
+  color: white;
+  margin-top: auto;
 
-    .content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        p {
-            margin-right: auto;
-        }
-        .iconBox {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            a {
-                margin-left: a.remGolden(3);
-                width: 32px;
-            }
-        }
-
-        @media screen and (max-width: a.$breakpoint-very-small-screen) {
-            padding-left: a.remGolden(4);
-            flex-direction: column-reverse;
-            p {
-                margin-right: 0px;
-            }
-            .iconBox {
-                margin-left: -(a.remGolden(3));
-                margin-bottom: a.remGolden(3);
-
-            }
-        }
-
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p {
+      margin-right: auto;
+    }
+    .iconBox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: a.remGolden(3);
+      a {
+        width: 32px;
+      }
     }
 
+    @media screen and (max-width: a.$breakpoint-very-small-screen) {
+      padding-left: a.remGolden(4);
+      flex-direction: column-reverse;
+      p {
+        margin-right: 0px;
+      }
+      .iconBox {
+        margin-left: -(a.remGolden(3));
+        margin-bottom: a.remGolden(3);
+      }
+    }
+  }
 }

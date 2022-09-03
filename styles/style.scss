@@ -4,16 +4,19 @@
   @include a.clear-margin-and-padding;
   font-family: a.$regular-font;
 }
+
 html {
   height: 100%;
   overflow-x: hidden;
 }
+
 main {
   min-height: 100%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
+
 body {
   // for parallax effect
   height: 100%;
@@ -27,6 +30,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #__next {
   flex-grow: 1;
   display: flex;
@@ -40,9 +44,11 @@ h4 {
   font-family: a.$title-font;
   color: a.$title-font-color;
 }
+
 li {
   list-style-type: none;
 }
+
 a {
   outline: none;
   text-decoration: none;
@@ -51,14 +57,14 @@ a {
     color: a.$color-a-light;
   }
 }
-.note {
-  border-radius: a.$card-border-radius;
-  padding: a.$common-gap;
-  @include a.box-shadow;
-  h1 {
-    color: a.$color-a;
-  }
-}
+// .note {
+//   border-radius: a.$card-border-radius;
+//   padding: a.$common-gap;
+//   @include a.box-shadow;
+//   h1 {
+//     color: a.$color-a;
+//   }
+// }
 .background-box {
   padding: a.remGolden(4);
   display: flex;
@@ -68,6 +74,7 @@ a {
     padding-right: 0px;
   }
 }
+
 .background-sky {
   background-image: url("https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg");
   background-attachment: fixed;
@@ -108,6 +115,7 @@ a {
   width: 100%;
   max-width: a.$max-width;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -119,6 +127,7 @@ a {
     margin-bottom: auto;
   }
 }
+
 .grid-1-col {
   width: 100%;
   display: grid;
@@ -126,6 +135,7 @@ a {
   row-gap: a.remGolden(4);
   grid-template-columns: 1fr;
 }
+
 .grid-2-col {
   width: 100%;
   display: grid;
@@ -136,40 +146,10 @@ a {
   }
 }
 
-// .vertical-card {
-//   //@include a.border-settings;
-//   @include a.box-shadow;
-//   @include a.card-border-radius;
-//   height: fit-content;
-//   overflow: hidden;
-//   h1,
-//   h2,
-//   h3 {
-//     background-color: a.$color-a-transparent;
-//     padding: a.$heading-font-padding;
-//     font-size: a.$heading-font-size;
-//   }
-
-//   h2 {
-//     color: a.$color-a-very-light;
-//     font-size: a.$heading-font-size;
-//     padding-top: 0;
-//   }
-
-//   ul li {
-//     padding: a.remGolden(2);
-//     background-color: a.$card-odd-item-color;
-//     &:nth-child(odd) {
-//       background-color: a.$card-even-item-color;
-//     }
-//   }
-// }
-
 .blog-post {
   img {
     width: 100%;
   }
-
   p {
     margin: 3rem 0rem 3rem 0rem;
   }
