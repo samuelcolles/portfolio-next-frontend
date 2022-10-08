@@ -15,16 +15,11 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: a.remGolden(2);
     @media only screen and (max-width: a.$breakpoint-small-screen) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
-  }
-  .grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: a.remGolden(2);
   }
   .tool {
     background-color: a.$color-white-transparent;
@@ -32,12 +27,7 @@
     flex-direction: column;
     flex-grow: 0;
     padding: a.remGolden(2);
-
     border-radius: a.$card-border-radius;
-    .titleBox {
-      padding-left: a.remGolden(1);
-      padding-bottom: a.remGolden(2);
-    }
 
     p {
       margin-left: a.remGolden(2);
@@ -46,13 +36,6 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-    }
-    .nestedTool {
-      background-color: a.$color-a-very-light-transparent;
-      flex-grow: 0;
-
-      padding: a.remGolden(1);
-      border-radius: a.$card-border-radius;
     }
   }
 }
