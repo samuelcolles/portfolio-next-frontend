@@ -10,7 +10,7 @@ const ToolList = props => {
       <h1>{title}</h1>
       <div className={Style.grid}>
         {tools.map(tool => (
-          <div className={Style.tool}>
+          <div className={Style.tool} key={tool.name}>
             <div className={Style.shelf + " " + Style.titleBox}>
               <Image
                 className={Style.logo}
