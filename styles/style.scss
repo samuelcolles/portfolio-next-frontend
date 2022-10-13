@@ -32,7 +32,7 @@ body {
 }
 
 #__next {
-  flex-grow: 1;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -57,14 +57,7 @@ a {
     color: a.$color-a-light;
   }
 }
-// .note {
-//   border-radius: a.$card-border-radius;
-//   padding: a.$common-gap;
-//   @include a.box-shadow;
-//   h1 {
-//     color: a.$color-a;
-//   }
-// }
+
 .background-box {
   padding: a.remGolden(4);
   display: flex;
