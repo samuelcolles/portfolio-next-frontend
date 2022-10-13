@@ -64,6 +64,7 @@
     @include a.card-border-radius;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     background-color: a.$color-a-very-light-transparent;
 
