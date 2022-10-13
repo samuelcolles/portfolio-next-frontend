@@ -35,7 +35,8 @@ export default function Resume(props) {
 }
 export const getStaticProps = async () => {
   const resSkillList = await fetch(
-    process.env.STRAPI_BACKEND_URL + "/api/skill-lists?populate=skill"
+    process.env.STRAPI_BACKEND_URL +
+      "/api/skill-lists?populate=skill&sort=title"
   );
   const skillLists = await resSkillList.json();
   const resCertification = await fetch(
