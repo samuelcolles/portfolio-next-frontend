@@ -17,6 +17,7 @@ const ToolList = props => {
                 src={tool.icon.data.attributes.url}
                 width={logoSize}
                 height={logoSize}
+                priority
               />
               <p>{tool.name}</p>
             </div>

@@ -30,6 +30,7 @@ const ProjectCard = ({ project }) => {
               src={siteImageURL}
               height={200}
               width={200}
+              priority
             />
             <h3 className={Style.previewText}>Demo</h3>
           </a>
@@ -44,6 +45,7 @@ const ProjectCard = ({ project }) => {
               src={codeImageURL}
               height={200}
               width={200}
+              priority
             />
             <h3 className={Style.previewText}>Code</h3>
           </a>
