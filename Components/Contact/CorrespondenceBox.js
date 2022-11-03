@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { CorrespondenceAPIService } from "../../services/correspondenceAPI";
 import style from './correspondenceBox.module.scss'
 import {useRouter} from 'next/router'
+import { motion } from "framer-motion"
+import slideUp from "../../animations/slideUp"
 
 export default function CorrespondenceBox() {
     const [name, setName] = useState("")
@@ -49,7 +51,13 @@ export default function CorrespondenceBox() {
         
     }
 
-    return <div className={"background-color-a-very-light container " + style.main}>
+    return <motion.div 
+        className={"background-color-a-very-light container " + style.main}
+        initial="hidden"
+        variants={slideUp}
+        whileInView="visible"
+        viewport={{ once: true }}
+        >
         <form className={style.form} onSubmit={(e) => handleSend(e)}>
             <div className={style.fieldAndError}>
                 <label htmlFor="name">Name:</label>
@@ -88,6 +96,6 @@ export default function CorrespondenceBox() {
             />
             <button onClick={(e) => handleSend(e)}>Send</button>
         </form>
-    </div>
+    </motion.div>
 
 }

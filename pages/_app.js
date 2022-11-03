@@ -4,9 +4,8 @@ import '../styles/style.scss'
 
 
 export default function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
+  return <Layout>
     <Component {...pageProps} />
-    </Layout>
-  )
+  </Layout>
+  
 }

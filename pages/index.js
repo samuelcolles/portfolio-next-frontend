@@ -2,8 +2,7 @@ import ProjectCard from "../Components/ProjectCard/ProjectCard";
 import TitleCloud from "../Components/TitleCloud/TitleCloud";
 
 export default function Home({ projects }) {
-  return (
-    <>
+  return <>
       <TitleCloud />
       <div className="background-box">
         <div className="grid-1-col container">
@@ -13,7 +12,6 @@ export default function Home({ projects }) {
         </div>
       </div>
     </>
-  );
 }
 export const getStaticProps = async () => {
   const resProjects = await fetch(

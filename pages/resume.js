@@ -4,8 +4,7 @@ import CertificationCard from "../Components/CertificationCard/CertificationCard
 import ToolList from "../Components/ToolList/ToolList";
 
 export default function Resume(props) {
-  return (
-    <>
+  return <>
       <div className="background-box ">
         <article className="grid-1-col container">
           {props.skillLists.map(list => (
@@ -31,7 +30,6 @@ export default function Resume(props) {
         </article>
       </div>
     </>
-  );
 }
 export const getStaticProps = async () => {
   const resSkillList = await fetch(

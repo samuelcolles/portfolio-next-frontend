@@ -4,15 +4,14 @@ import style from '../../styles/fullPostPage.module.scss'
 
 export default function FullPostPage({ post }) {
   console.log(post.attributes.title)
-  return (<div className='background-box'>
+  return <div className='background-box'>
     <div className='container'>
       <div className={style.post}>
         <h1>{post.attributes.title}</h1>
         <div className='blog-post' dangerouslySetInnerHTML={{ __html: marked(post.attributes.content) }} />
-
       </div>
     </div>
-  </div>)
+  </div>
 }
 
 export async function getStaticPaths() {
