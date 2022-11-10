@@ -5,4 +5,10 @@
     @include a.box-shadow;
     @include a.card-border-radius;
     padding: a.remGolden(4);
+    a {
+        color: a.$color-a-light;
+        &:hover{
+            color: white;
+        }
+    }
 }

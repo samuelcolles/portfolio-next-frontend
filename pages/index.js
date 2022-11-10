@@ -17,9 +17,10 @@ export default function Home({ projects }) {
 }
 export const getStaticProps = async () => {
   const resProjects = await fetch(
-    process.env.STRAPI_BACKEND_URL + "/api/projects?populate=*&sort=id"
+    process.env.STRAPI_BACKEND_URL + "/api/projects?populate=*&sort=order"
   );
   const projects = await resProjects.json();
+  console.log(projects)
 
   return {
     props: {

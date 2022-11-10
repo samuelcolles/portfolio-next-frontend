@@ -6,10 +6,11 @@ import BackGroundClouds from '../BackgroundClouds/BackgroundClouds'
 
 export default function Layout({ children }) {
     return (<>
+
         <MyHead />
         <main>
             <Nav />
-            <BackGroundClouds/>
+            <BackGroundClouds />
             {children}
         </main>
 

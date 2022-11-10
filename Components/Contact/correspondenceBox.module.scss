@@ -40,3 +40,16 @@
         color: red;
     }
 }
+
+.sending {
+
+    background-color: a.$color-a-very-light-transparent;
+    @include a.box-shadow;
+    @include a.card-border-radius;
+    padding: a.remGolden(4);
+    text-align: center;
+    h1 {
+        color: a.$color-a;
+        font-size: a.remGolden(9);
+    }
+}
