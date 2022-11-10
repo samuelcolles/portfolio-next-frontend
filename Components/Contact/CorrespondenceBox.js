@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { CorrespondenceAPIService } from "../../services/correspondenceAPI";
 import style from './correspondenceBox.module.scss'
 import { useRouter } from 'next/router'
+import { motion } from "framer-motion"
+import slideUp from "../../animations/slideUp"
 
 export default function CorrespondenceBox() {
     const [name, setName] = useState("")
@@ -48,11 +50,54 @@ export default function CorrespondenceBox() {
             router.push("/success")
         }
     }
-    const handleSendError = () => {
-
-    }
 
     return <>
+        <motion.div
+            className={"background-color-a-very-light container " + style.main}
+            initial="hidden"
+            variants={slideUp}
+            whileInView="visible"
+            viewport={{ once: true }}
+        >
+            <form className={style.form} onSubmit={(e) => handleSend(e)}>
+                <div className={style.fieldAndError}>
+                    <label htmlFor="name">Name:</label>
+                    {nameError ? <p>Please include your name.</p> : <></>}
+                </div>
+                <input
+                    id="name"
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+                <div className={style.fieldAndError}>
+                    <label htmlFor="email">Email:</label>
+                    {emailError ? <p>Please include a valid email address.</p> : <></>}
+                </div>
+                <input
+                    id="email"
+                    type="text"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+                <div className={style.fieldAndError}>
+                    <label htmlFor="message">Message:</label>
+                    {messageError ? <p>Please include a message.</p> : <></>}
+                </div>
+                <textarea
+                    rows="5"
+                    cols="40"
+                    id="message"
+                    type="text"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                />
+                <button onClick={(e) => handleSend(e)}>Send</button>
+            </form>
+        </motion.div>
 
         <div className={"background-color-a-very-light container " + style.main}>
             <form className={style.form} onSubmit={(e) => handleSend(e)}>
